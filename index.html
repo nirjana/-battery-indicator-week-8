@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Battery indicator</title>
+        <link rel="stylesheet" href="css/styleTest.css">
+       
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">  
+          <!-- REMIXICONS -->
+
+    </head>
+    <body>
+
+        <select onchange='document.location.href=this.options[this.selectedIndex]. value;'>  
+            <option value="">Change Page View  </option>
+            <option value="/?m=1" >Mobile View  </option>
+            <option value="/?m=0" >Desktop View  </option>
+            </select> 
+
+         
+<input type="checkbox" onclick="openFullscreen();">
+<!-- <button >Open  Fullscreen Mode</button> -->
+<h3> Press the "Esc" key to exit full screen.</h3>
+       
+        <section class="battery" id="section1">
+            
+            <div class="battery__card">
+                <div class="battery__data">
+                    <p class="battery__text"></p>
+                    <h1 class="battery__percentage">
+                       
+                    </h1>
+                    <h1 class="emoji">
+
+
+                    </h1>
+                    <p class="battery__status">
+                        Low Battery <i class="ri-plug-line  "></i>    <!-- Remix Icon is a set of open-source ,https://remixicon.com/ -->
+                    </p>
+                </div>
+                <div class="battery__pill">
+                    <div class="battery__level">
+                        <div class="battery__liquid"> </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+       
+        <script src="js/main.js"></script>
+    </body>
+</html>
